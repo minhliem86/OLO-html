@@ -1,4 +1,26 @@
-/* line 1, D:/xampp/htdocs/OLO/build/style.scss */
+@import url("../fonts/landon/font.css");
+@import url("../fonts/HiraKakuPro-W3/font.css");
+@import url("../fonts/HiraKakuPro-W6/font.css");
+/* line 5, E:/xampp/xampp/htdocs/OLO/build/style.scss */
 * {
   margin: 0;
   padding: 0; }
+
+/* line 6, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+html, body {
+  font-size: 12px; }
+
+/* line 7, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+ul, ol {
+  margin: 0; }
+
+/* line 8, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+a, a:hover {
+  text-decoration: none !important;
+  outline: none !important; }
+
+/* line 9, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem; }
