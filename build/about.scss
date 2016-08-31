@@ -1,0 +1,129 @@
+@import 'common';
+
+.breadcrum{
+	padding:10px 0;
+	.breadcrum-me{
+		list-style-type:none;
+		li{
+			display:inline-block;
+			padding:0 15px;
+			position:relative;
+			a{
+				display:block;
+				@include fontW3;
+				font-size:1.4rem;
+				color:$cl-xamxanh;
+			}
+			&:after{
+				content:'/';
+				display:block;
+				position:absolute;
+				right:0;
+				top:0;
+			}
+			&:last-child:after{
+				content:'';
+			}
+			&.active{
+				a{
+					color:$cl-xanhngoc;
+					text-decoration:underline !important;;
+				}
+			}
+		}
+	}
+}
+.static-banner{
+	height:32rem;
+	background:url('../img/about/about-banner.jpg')no-repeat;
+	background-size:100%;
+	width:100%;
+	display:table;
+	@include media(767px){
+		height:auto;
+	}
+	.is-table-cell{
+		display:table-cell;
+		vertical-align:middle;
+	}
+}
+
+.photo-campaign-section{
+	.wrap-title{
+		display:table;
+		width:100%;
+		margin-bottom:40px;
+		.table-cell{
+			display:table-cell;
+			vertical-align:middle;
+		}
+		span.logo-mini, h2.title-section{
+			display:inline-block;
+		}
+		span.logo-mini{
+			margin-right:15px;
+
+		}
+		h2.title-section{
+			vertical-align:middle;
+			font-weight:600;
+			color:$cl-xanhngoc;
+		}
+	}
+	p.sub-title-section{
+		font-size:1.4rem;
+		line-height:3.5rem;
+		margin-bottom:60px;
+		color:$cl-xamxanh;
+		text-align:center;
+	}
+	.content-section{
+		.img-about{
+			margin:0 auto;
+		}
+	}
+}
+
+.point-section{
+	h2.title-section{
+		font-weight:600;
+		color:$cl-xanhngoc;
+		margin-bottom:60px;
+	}
+	.content-section{
+		.each-point{
+			color:$cl-xamxanh;
+			margin-bottom:20px;
+			&.last{
+				margin-bottom:0;
+			}
+			img{
+				margin:0 auto 25px;
+			}
+			h3.title-point{
+				color:$cl-xanhngoc;
+				font-weight:600;
+				@include fontW6;
+				text-align:center;
+				margin-bottom:25px;
+				font-weight:600;
+			}
+			p.content-point{
+				font-size:1.4rem;
+				@include fontW3;
+			}
+			p.step{
+				margin-bottom:4.5rem;
+				text-transform:uppercase;
+				color:$cl-xamxanh;
+				@include fontLangdon;
+				font-size:2.0rem;
+				font-weight:600;
+				text-align:center;
+			}
+		}
+	}
+	.btn-me{
+		color:white;
+	}
+}

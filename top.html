@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -52,7 +53,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-sm-7">
-								<div class="left-banner">
+								<div class="left-banner animated fadeInLeft">
 									<a href="#" class="fb-ic ic"><img src="img/top/facebook-logo.png" class="img-responsive" alt="Facebook"></a>
 									<a href="#" class="vine-ic ic"><img src="img/top/vine-logo.png" class="img-responsive" alt="Facebook"></a>
 									<a href="#" class="in-ic ic"><img src="img/top/instagram-logo.png" class="img-responsive" alt="Facebook"></a>
@@ -68,7 +69,7 @@
 								</div>	<!-- end left banner-->
 							</div>
 							<div class="col-sm-5">
-								<div class="right-banner">
+								<div class="right-banner animated fadeInRight">
 									<img src="img/top/mobile.png" class="img-responsive" alt="Mobile">
 									<p class="sub-banner">特許取得済み</p>
 								</div>	<!-- end right-banner-->
@@ -371,7 +372,7 @@
 											</div>
 										</div>
 									</div> <!-- end slide -->
-									
+
 									<!-- Controls -->
 									<a class="left carousel-control" href="#slide-testimonial" role="button" data-slide="prev">
 										<img src="img/top/btn-left.png" height="48" width="48" alt="">
@@ -411,6 +412,7 @@
 						</div>
 					</div>
 				</div>
+				<a href="#" class="btn-up"><img src="img/top/btn-up.png" height="44" width="44" alt=""></a>
 			</div>
 			<!-- END CONTACT -->
 		</div>
@@ -467,16 +469,44 @@
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
+	<script src="js/jquery.viewportchecker.min.js"></script>
+	<script src="js/common.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('.each-point, .each-function').matchHeight();
-			
 
-			// $('.carousel').carousel({
-			// 	pause: true,
-			// 	interval: false
-			// });
+			$('.each-point, .each-function, .each-insta').addClass('invisible').viewportChecker({
+				 classToAdd: 'visible animated fadeInUp',
+				 offset : 200,
+			})
+
+			$('.contact-section').addClass('invisible').viewportChecker({
+				classToAdd: 'visible animated fadeInRight',
+				offset : 150,
+			})
+
+			$('.price-section').addClass('invisible').viewportChecker({
+				classToAdd: 'visible animated fadeInLeft',
+				offset : 150,
+			})
+
+			// FIX HEADER
+			var stickyHeader  = $('.header').offset().top;
+			var stickyNav = function (){
+				var scrolltop  = $(window).scrollTop();
+				if (scrolltop > stickyHeader) {
+				    $('.header').addClass('bg-color');
+				} else {
+				    $('.header').removeClass('bg-color');
+				}
+			}
+			// HEADER
+			$(window).on('scroll',function(){
+				stickyNav();
+			})
 		})
+
+
 	</script>
 </body>
 </html>
