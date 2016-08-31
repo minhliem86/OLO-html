@@ -1,0 +1,328 @@
+@import url('../fonts/langdon/font.css');
+@import url('../fonts/HiraKakuPro-W3/font.css');
+@import url('../fonts/HiraKakuPro-W6/font.css');
+
+*{margin:0; padding:0}
+html{font-size:62.5%}
+body{font-size:14px; font-size:1.4rem}
+ul, ol{margin:0}
+a, a:hover{text-decoration: none !important; outline: none !important}
+h2,h3,h4, p{margin:0; padding:0; font-size:1.4rem}
+
+.clear{clear:both}
+
+// DEFINE COLOR
+$cl-xanhngoc:#14a0aa;
+$cl-xamxanh:#505a5e;
+$cl-xanhla:#e0fa50;
+$cl-whiteblue:#ddeff1;
+
+
+// DEFINE MIXIN
+@mixin fontW3(){
+	font-family: 'HiraKakuPro-W3-AlphaNum',
+}
+@mixin fontW6(){
+	font-family: 'HiraKakuPro-W6-AlphaNum',
+}
+@mixin fontLangdon(){
+	font-family: 'Langdon';
+}
+
+@mixin transition($tran...){
+	transition:$tran;
+	-webkit-transition:$tran;
+	-moz-transition:$tran;
+	-o-transition:$tran;
+}
+@mixin animation ($key...){
+	animation: $key;
+	-webkit-animation: $key;
+	-moz-animation: $key;
+}
+@mixin media($width){
+	@media screen and (max-width:$width){
+		@content;
+	}
+}
+
+// DEFINE
+
+.white-bg{background:white;}
+.gray-bg{background:#f9fafb}
+.blue-bg{background:#14a0aa}
+.price1{background:#14b4c8}
+.price2{background:#2896c8}
+.price3{background:#2878b4}
+
+.btn-me{
+	width:100%;
+	padding:6px 0;
+	max-width:280px;
+	display:inline-block;
+	text-align:center;
+	border-radius:5px;
+	font-size:1.4rem;
+	@include transition(all 0.4s);
+	&:hover, &:focus{
+		box-shadow:1px 1px 5px 0 lighten(#505a5e,10%);
+	}
+}
+.btn-xanhla{background:#e0fa50}
+.btn-xanhduong{background:#14a0aa}
+.btn-lightgreen{background:#e0fa50}
+
+// HEADER
+.header{
+	&.bg-color{
+		background:url('../img/bg-header.jpg')no-repeat;
+		background-size:100% 100%;
+	}
+	height:7.5rem;
+	position:fixed;
+	width:100%;
+	z-index:9999;
+	@include transition(background 0.3s);
+	.wrap-logo{
+		padding-top:15px;
+	}
+	// NAVIGATION
+	.navbar-me{
+		padding-top:20px;
+	}
+	.main-navigation{
+		float:right;
+		li{
+			float:left;
+			padding:0 15px;
+			list-style-type:none;
+			&:last-child{
+				padding:0;
+			}
+			a{
+				display:block;
+				color:white;
+				font-size:1.4rem;
+				@include fontW6;
+				@include transition(color 0.3s);
+				&:hover{
+					color:$cl-xamxanh;
+				}
+			}
+		}
+	}
+}
+
+.banner{
+	padding-top:7.5rem;
+	background:url('../img/bg-header.jpg')no-repeat;
+	background-size:100% 100%;
+	position:relative;
+	.inner-banner{
+		padding:50px 0 75px;
+		position:relative;
+		.left-banner{
+			position:relative;
+			padding-top:130px;
+			.title-banner{
+				@inlcude fontW6;
+				font-size:2.2rem;
+				color:white;
+				line-height: 1.8rem;
+				font-weight:600;
+				text-align: center;
+				&.mrbot{
+					margin-bottom:2.5rem;
+				}
+			}
+			.sub-banner{
+				font-size:1.4rem;
+				@include fontW3;
+				margin-bottom:3.0rem;
+				color:white;
+				text-align: right;
+			}
+			.btn-me{
+				color:$cl-xanhngoc;
+			}
+			.ic{
+				position:absolute;
+				&.fb-ic{
+					top:18%;
+					left:27%;
+				}
+				&.twitter-ic{
+					top:15%;
+					left:65%;
+				}
+				&.in-ic{
+					top:10%;
+					left:45%;
+				}
+				&.vine-ic{
+					top:0%;
+					left:35%;
+				}
+
+			}
+		}
+		.right-banner{
+			img{
+				margin-bottom:15px;
+			}
+			p.sub-banner{
+				color:white;
+				text-align: right;
+			}
+		}
+	}
+	.btn-down{
+		position:absolute;
+		left:50%;
+		bottom:20px;
+		transform:translateX(-50%);
+		-webkit-transform:translateX(-50%);
+		-moz-transform:translateX(-50%);
+		animation: btndown 2s infinite;
+	}
+}
+
+.section {
+	padding:80px 0;
+	h2.title-section{
+		font-size:2.2rem;
+		@include fontW6;
+		text-align: center;
+		&.h14{
+			font-size:1.4rem;
+		}
+	}
+	.wrap-btn-section{
+		margin-top:30px;
+	}
+}
+// CONTACT
+.contact-section{
+	p.title-contact{
+		font-size:1.6rem;
+		@include fontW6;
+		color:white;
+		text-align: center;
+		margin-bottom:30px;
+	}
+	.wrap-phone{
+		max-width:440px;
+		margin:30px auto 0;
+		p{
+			color:white;
+			font-size:1.6rem;
+			@include fontW6;
+		}
+		p.phone{
+			float:left;
+			padding-left:40px;
+			position:relative;
+			&:before{
+				content:'';
+				display: block;
+				position:absolute;
+				left:0;
+				top:0;
+				width:25px;
+				height:25px;
+				background: url('../img/phone-icon.png')no-repeat;
+			}
+		}
+		p.time{
+			float:right;
+		}
+
+	}
+}
+
+.footer{
+	padding:100px 0 125px;
+
+	.navigation-footer{
+		list-style-type:none;
+		li{
+			display:block;
+			margin-bottom:10px;
+			&:last-child{
+				margin-bottom:0;
+			}
+			a{
+				display:block;
+				padding:3px 0;
+				color:$cl-xamxanh;
+				@include fontW3;
+				font-size:1.4rem;
+				&:hover{
+					text-decoration: underline !important;
+				}
+			}
+		}
+	}
+	.wrap-right{
+		float:right;
+	}
+	.wrap-btn-footer{
+		&.btn-above{
+			margin-bottom:10px;
+			a{
+				color:$cl-xanhngoc;
+			}
+		}
+		&.btn-behind{
+			a{
+				color:white;
+			}
+		}
+	}
+	.line{
+		height:2px;
+		max-width:280px;
+		background:$cl-xanhngoc;
+		margin:0 auto;
+		margin:40px auto;
+	}
+	.text-footer{
+		.logo-footer{
+			img{
+				margin:0 auto;
+			}
+		}
+		p.text{
+			color:$cl-xanhngoc;
+			@include fontW3;
+			font-size:1.2rem;
+			margin-top:20px;
+		}
+	}
+}
+.copy-right{
+	padding:30px 0;
+	p{
+		@include fontW3;
+		color:$cl-xamxanh;
+		font-size:1.2rem;
+		text-align: center;
+	}
+}
+
+@keyframes btndown{
+	0% {bottom:20px;}
+	50%{bottom:10px}
+	100%{bottom:20px}
+}
+@-webkit-keyframes btndown{
+	0% {bottom:20px;}
+	50%{bottom:10px}
+	100%{bottom:20px}
+}
+@-moz-keyframes btndown{
+	0% {bottom:20px;}
+	50%{bottom:10px}
+	100%{bottom:20px}
+}
+

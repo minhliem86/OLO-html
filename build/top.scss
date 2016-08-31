@@ -1,0 +1,323 @@
+@import 'common';
+
+// POINT
+.point-section{
+	.wrap-title{
+		display:table;
+		width:100%;
+		margin-bottom:60px;
+		.table-cell{
+			display:table-cell;
+			vertical-align:middle;
+		}
+		span.logo-mini, h2.title-section{
+			display:inline-block;
+		}
+		span.logo-mini{
+			margin-right:15px;
+
+		}
+		h2.title-section{
+			vertical-align:middle;
+			font-weight:600;
+			color:$cl-xanhngoc;
+		}
+	}
+	.content-section{
+		.each-point{
+			color:$cl-xamxanh;
+			margin-bottom:20px;
+			&.last{
+				margin-bottom:0;
+			}
+			img{
+				margin:0 auto 25px;
+			}
+			h3.title-point{
+				font-weight:600;
+				@include fontW6;
+				text-align:center;
+				margin-bottom:25px;
+				font-weight:600;
+			}
+			p.content-point{
+				font-size:1.4rem;
+				@include fontW3;
+			}
+		}
+	}
+}
+
+// FUNCTION
+.function-section{
+	h2.title-section{
+		font-weight:600;
+		color:$cl-xanhngoc;
+		margin-bottom:60px;
+	}
+	.content-section{
+		.each-function{
+			color:$cl-xamxanh;
+			margin-bottom:20px;
+			&.last{
+				margin-bottom:0;
+			}
+			img{
+				margin:0 auto 25px;
+			}
+			h3.title-function{
+				color:$cl-xanhngoc;
+				font-weight:600;
+				@include fontW6;
+				text-align:center;
+				margin-bottom:25px;
+				font-weight:600;
+			}
+			p.content-function{
+				font-size:1.4rem;
+				@include fontW3;
+			}
+		}
+	}
+	.btn-me{
+		color:white;
+	}
+}
+
+// INSTAGRAM
+.intagram-section{
+	h2.title-section{
+		font-weight:600;
+		color:$cl-xanhngoc;
+		margin-bottom:60px;
+	}
+	.content-section{
+		p.step{
+			margin-bottom:4.5rem;
+			text-transform:uppercase;
+			color:$cl-xamxanh;
+			@include fontLangdon;
+			font-size:2.0rem;
+			font-weight:600;
+			text-align:center;
+		}
+		.each-insta{
+			color:$cl-xamxanh;
+			margin-bottom:40px;
+			.container-img{
+				position:relative;
+				&:after{
+					content:'';
+					display:block;
+					position:absolute;
+					width:40px;
+					height:24px;
+					right:-30px;
+					top:50%;
+					transform:translateY(-50%);
+					-webkit-transform:translateY(-50%);
+					-moz-transform:translateY(-50%);
+					background:url('../img/top/arrow.png')no-repeat;
+				}
+				&.last:after{
+					content:'';
+					display:none;
+				}
+			}
+
+			&.last{
+				margin-bottom:0;
+			}
+			img{
+				margin:0 auto 25px;
+			}
+			h3.title-insta{
+				color:$cl-xanhngoc;
+				font-weight:600;
+				@include fontW6;
+				text-align:center;
+				margin-bottom:25px;
+				font-weight:600;
+			}
+			p.content-insta{
+				font-size:1.4rem;
+				@include fontW3;
+			}
+		}
+	}
+	.btn-me{
+		color:white;
+	}
+}
+
+// PRICE
+.price-section{
+	h2.title-section{
+		font-weight:600;
+		color:$cl-xanhngoc;
+		margin-bottom:60px;
+	}
+	.content-section{
+		margin-bottom:70px;
+		.is-table-row{
+			display:table;
+			width:100%;
+			[class*="col-"]{
+				float:none;
+				display:table-cell;
+				vertical-align:top;
+			}
+		}
+		.price-area{
+			p.title-area{
+				font-size:1.6rem;
+				color:white;
+				@include fontW6;
+				padding:20px 0 ;
+				text-align:center;
+				border-bottom:1px solid white;
+			}
+			.content-area{
+				padding:75px 0 30px;
+				text-align:center;
+				color:white;
+				p.price-num{
+					@include fontLangdon;
+					font-weight:600;
+					font-size:7.5rem;
+					line-height:7.5rem;
+				}
+				p.sub-price{
+					font-size:2.0rem;
+					@include fontW6;
+					padding-right:15px;
+				}
+				p.desc-price{
+					margin-top:60px;
+					font-size:1.4rem;
+					@include fontW3;
+
+				}
+			}
+		}
+	}
+	.btn-me{
+		color:white;
+	}
+}
+
+// TESTIMONIAL
+.testimonial-section{
+	h2.title-section{
+		font-weight:600;
+		color:$cl-xanhngoc;
+		margin-bottom:110px;
+	}
+	// CAROUSEL
+	.wrap-item{
+		.left-item{
+			float:left;
+			width:100%;
+			max-width:250px;
+			text-align:center;
+			img{
+				margin:0 auto 30px;
+			}
+			p.title-testi{
+				font-size:1.6rem;
+				@include fontW3;
+				color:$cl-xamxanh;
+			}
+			a.link-testi{
+				font-size:1.4rem;
+				color:$cl-xanhngoc;
+				@include fontW3;
+			}
+		}
+		.right-item{
+			float:right;
+			width:100%;
+			max-width:690px;
+			.wrap-content-testi{
+				padding:40px;
+				background:$cl-whiteblue;
+				position:relative;
+				&:before{
+					content:'';
+					display:block;
+					position:absolute;
+					width:0;
+					height:0;
+					border-top:30px solid transparent;
+					border-bottom:0px solid transparent;
+					border-left:30px solid $cl-whiteblue;
+					bottom:40%;
+					left:-30px;
+					transform:  rotate(180deg);
+					-webkit-transform: rotate(180deg);
+					-moz-transform: rotate(180deg);
+				}
+				p.content-testi{
+					font-size:1.8rem;
+					color:$cl-xanhngoc;
+					padding:0 30px;
+					position:relative;
+					&:before, &:after{
+						content:'';
+						display:block;
+						width:24px;
+						height:19px;
+						position:absolute;
+					}
+					&:before{
+						background:url('../img/top/open-qoute.png')no-repeat;
+						left:0;
+						top:0;
+					}
+					&:after{
+						background:url('../img/top/close-quote.png')no-repeat;
+						right:0;
+						bottom:0;
+					}
+				}
+			}
+
+		}
+	}
+	.content-section{
+		// CAROSOUL BTN
+		.wrap-testi-slide{
+			.carousel-indicators{
+				bottom:-50px;
+				li{
+					background:#dce6ea;
+					border:none;
+					width:1.5rem;
+					height:1.5rem;
+				}
+			}
+			.carousel-indicators .active{
+				background:#8c969a;
+			}
+		}
+		.carousel-control{
+			width:auto;
+			text-shadow: none;
+			height:100%;
+			img{
+				position:relative;
+				top:50%;
+			}
+			&.left, &.right{
+				background-image:none;
+			}
+			&.left{
+				left:-60px;
+			}
+			&.right{
+				right:-60px;
+			}
+		}
+	}
+
+}
