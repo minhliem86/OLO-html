@@ -1,4 +1,4 @@
-@import url("../fonts/landon/font.css");
+@import url("../fonts/langdon/font.css");
 @import url("../fonts/HiraKakuPro-W3/font.css");
 @import url("../fonts/HiraKakuPro-W6/font.css");
 /* line 5, E:/xampp/xampp/htdocs/OLO/build/style.scss */
@@ -7,20 +7,145 @@
   padding: 0; }
 
 /* line 6, E:/xampp/xampp/htdocs/OLO/build/style.scss */
-html, body {
-  font-size: 12px; }
+html {
+  font-size: 62.5%; }
 
 /* line 7, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+body {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+/* line 8, E:/xampp/xampp/htdocs/OLO/build/style.scss */
 ul, ol {
   margin: 0; }
 
-/* line 8, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+/* line 9, E:/xampp/xampp/htdocs/OLO/build/style.scss */
 a, a:hover {
   text-decoration: none !important;
   outline: none !important; }
 
-/* line 9, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+/* line 10, E:/xampp/xampp/htdocs/OLO/build/style.scss */
 h2, h3, h4, p {
   margin: 0;
   padding: 0;
   font-size: 1.4rem; }
+
+/* line 12, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+.clear {
+  clear: both; }
+
+/* line 13, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+.white-bg {
+  background: white; }
+
+/* line 14, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+.gray-bg {
+  background: #f9fafb; }
+
+/* line 15, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+.blue-bg {
+  background: #14a0aa; }
+
+/* line 16, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+.price1 {
+  background: #14b4c8; }
+
+/* line 17, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+.price2 {
+  background: #2896c8; }
+
+/* line 18, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+.price3 {
+  background: #2878b4; }
+
+/* line 20, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+.btn-me {
+  padding: 8px 90px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.4rem; }
+
+/* line 21, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+.btn-xanhla {
+  background: #e0fa50; }
+
+/* line 55, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+.header {
+  height: 7.5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  transition: background 0.3s;
+  -webkit-transition: background 0.3s;
+  -moz-transition: background 0.3s;
+  -o-transition: background 0.3s; }
+  /* line 56, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+  .header.bg-color {
+    background: url("../img/bg-header.jpg") no-repeat;
+    background-size: 100% 100%; }
+  /* line 65, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+  .header .wrap-logo {
+    padding-top: 15px; }
+  /* line 69, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+  .header .navbar-me {
+    padding-top: 20px; }
+  /* line 72, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+  .header .main-navigation {
+    float: right; }
+    /* line 74, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+    .header .main-navigation li {
+      float: left;
+      padding: 0 15px;
+      list-style-type: none; }
+      /* line 78, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+      .header .main-navigation li:last-child {
+        padding: 0; }
+      /* line 81, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+      .header .main-navigation li a {
+        display: block;
+        color: white;
+        font-size: 1.4rem;
+        font-family: "HiraKakuPro-W6-AlphaNum";
+        transition: color 0.3s;
+        -webkit-transition: color 0.3s;
+        -moz-transition: color 0.3s;
+        -o-transition: color 0.3s; }
+        /* line 87, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+        .header .main-navigation li a:hover {
+          color: #505a5e; }
+
+/* line 95, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+.banner {
+  padding-top: 7.5rem;
+  background: url("../img/bg-header.jpg") no-repeat;
+  background-size: 100% 100%; }
+  /* line 99, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+  .banner .inner-banner {
+    padding: 50px 0 75px;
+    position: relative; }
+    /* line 102, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+    .banner .inner-banner .left-banner {
+      position: relative;
+      padding-top: 130px; }
+      /* line 105, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+      .banner .inner-banner .left-banner .title-banner {
+        @inlcude fontW6;
+        font-size: 2.2rem;
+        margin-bottom: 2.5rem;
+        color: white;
+        line-height: 2.5rem;
+        font-weight: 600;
+        text-align: center; }
+      /* line 114, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+      .banner .inner-banner .left-banner .sub-banner {
+        font-size: 1.4rem;
+        font-family: "HiraKakuPro-W3-AlphaNum";
+        margin-bottom: 3.0rem;
+        color: white;
+        text-align: right; }
+      /* line 121, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+      .banner .inner-banner .left-banner .btn-me {
+        color: #14a0aa; }
+      /* line 124, E:/xampp/xampp/htdocs/OLO/build/style.scss */
+      .banner .inner-banner .left-banner .ic {
+        position: absolute; }
