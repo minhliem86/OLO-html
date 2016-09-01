@@ -381,97 +381,111 @@ p.sub-title-page {
   100% {
     bottom: 20px; } }
 
-/* line 3, D:/xampp/htdocs/OLO/build/contact.scss */
+/* line 5, D:/xampp/htdocs/OLO/build/faq.scss */
 .breadcrum {
   padding: 10px 0; }
-  /* line 5, D:/xampp/htdocs/OLO/build/contact.scss */
+  /* line 7, D:/xampp/htdocs/OLO/build/faq.scss */
   .breadcrum .breadcrum-me {
     list-style-type: none; }
-    /* line 7, D:/xampp/htdocs/OLO/build/contact.scss */
+    /* line 9, D:/xampp/htdocs/OLO/build/faq.scss */
     .breadcrum .breadcrum-me li {
       display: inline-block;
       padding: 0 15px;
       position: relative; }
-      /* line 11, D:/xampp/htdocs/OLO/build/contact.scss */
+      /* line 13, D:/xampp/htdocs/OLO/build/faq.scss */
       .breadcrum .breadcrum-me li a {
         display: block;
         font-family: "HiraKakuPro-W3-AlphaNum";
         font-size: 1.4rem;
         color: #505a5e; }
-      /* line 17, D:/xampp/htdocs/OLO/build/contact.scss */
+      /* line 19, D:/xampp/htdocs/OLO/build/faq.scss */
       .breadcrum .breadcrum-me li:after {
         content: '/';
         display: block;
         position: absolute;
         right: 0;
         top: 0; }
-      /* line 24, D:/xampp/htdocs/OLO/build/contact.scss */
+      /* line 26, D:/xampp/htdocs/OLO/build/faq.scss */
       .breadcrum .breadcrum-me li:last-child:after {
         content: ''; }
-      /* line 28, D:/xampp/htdocs/OLO/build/contact.scss */
+      /* line 30, D:/xampp/htdocs/OLO/build/faq.scss */
       .breadcrum .breadcrum-me li.active a {
         color: #14a0aa;
         text-decoration: underline !important; }
 
-/* line 36, D:/xampp/htdocs/OLO/build/contact.scss */
+/* line 38, D:/xampp/htdocs/OLO/build/faq.scss */
 .static-banner {
   height: 32rem;
-  background: url("../img/contact/contact-banner.jpg") no-repeat;
+  background: url("../img/faq/faq-banner.jpg") no-repeat;
   background-size: 100%;
   width: 100%;
   display: table; }
   @media screen and (max-width: 767px) {
-    /* line 36, D:/xampp/htdocs/OLO/build/contact.scss */
+    /* line 38, D:/xampp/htdocs/OLO/build/faq.scss */
     .static-banner {
       height: auto; } }
-  /* line 45, D:/xampp/htdocs/OLO/build/contact.scss */
+  /* line 47, D:/xampp/htdocs/OLO/build/faq.scss */
   .static-banner .is-table-cell {
     display: table-cell;
     vertical-align: middle; }
 
-/* line 52, D:/xampp/htdocs/OLO/build/contact.scss */
-.form-section h2.title-section {
-  font-weight: 600;
-  color: #14a0aa;
-  margin-bottom: 10rem; }
-
-/* line 60, D:/xampp/htdocs/OLO/build/contact.scss */
-.form-section .content-section .wrap-form-contact form.formContact .form-group {
-  margin-bottom: 25px; }
-  /* line 62, D:/xampp/htdocs/OLO/build/contact.scss */
-  .form-section .content-section .wrap-form-contact form.formContact .form-group.text-note {
-    margin: 20px 0 60px; }
-  /* line 65, D:/xampp/htdocs/OLO/build/contact.scss */
-  .form-section .content-section .wrap-form-contact form.formContact .form-group .left-form {
-    width: 40%;
-    max-width: 250px;
-    float: left;
-    padding-right: 30px; }
-    /* line 70, D:/xampp/htdocs/OLO/build/contact.scss */
-    .form-section .content-section .wrap-form-contact form.formContact .form-group .left-form .require-form {
-      float: right;
-      color: red;
-      font-family: "HiraKakuPro-W3-AlphaNum";
-      font-size: 1.4rem; }
-  /* line 77, D:/xampp/htdocs/OLO/build/contact.scss */
-  .form-section .content-section .wrap-form-contact form.formContact .form-group .right-form {
-    width: 60%;
-    float: right; }
-  /* line 81, D:/xampp/htdocs/OLO/build/contact.scss */
-  .form-section .content-section .wrap-form-contact form.formContact .form-group label {
-    color: #505a5e;
-    font-family: "HiraKakuPro-W3-AlphaNum";
-    font-size: 1.4rem; }
-  /* line 86, D:/xampp/htdocs/OLO/build/contact.scss */
-  .form-section .content-section .wrap-form-contact form.formContact .form-group p.note-form {
-    font-family: "HiraKakuPro-W3-AlphaNum";
-    font-size: 1.4rem;
-    text-align: center; }
-    /* line 90, D:/xampp/htdocs/OLO/build/contact.scss */
-    .form-section .content-section .wrap-form-contact form.formContact .form-group p.note-form a {
+/* line 54, D:/xampp/htdocs/OLO/build/faq.scss */
+.faq-section .faq-sidebar {
+  padding: 30px 20px;
+  background: #f9fafb; }
+  /* line 58, D:/xampp/htdocs/OLO/build/faq.scss */
+  .faq-section .faq-sidebar .nav-faq li {
+    display: block;
+    margin-bottom: 15px; }
+    /* line 61, D:/xampp/htdocs/OLO/build/faq.scss */
+    .faq-section .faq-sidebar .nav-faq li a {
+      display: block;
+      padding: 2px 0;
+      color: #505a5e;
+      text-decoration: underline !important;
+      font-size: 1.4rem;
+      font-family: "HiraKakuPro-W3-AlphaNum"; }
+    /* line 70, D:/xampp/htdocs/OLO/build/faq.scss */
+    .faq-section .faq-sidebar .nav-faq li:hover a, .faq-section .faq-sidebar .nav-faq li.active a {
       color: #14a0aa; }
-  /* line 94, D:/xampp/htdocs/OLO/build/contact.scss */
-  .form-section .content-section .wrap-form-contact form.formContact .form-group input.btn-submit {
-    background: #14a0aa;
-    color: white;
-    border: none; }
+
+/* line 77, D:/xampp/htdocs/OLO/build/faq.scss */
+.faq-section .wrap-content-faq {
+  padding-top: 30px; }
+  /* line 79, D:/xampp/htdocs/OLO/build/faq.scss */
+  .faq-section .wrap-content-faq h3.title-faq {
+    font-size: 1.6rem;
+    font-family: "HiraKakuPro-W6-AlphaNum";
+    color: #14a0aa;
+    margin-bottom: 50px;
+    text-align: center; }
+  /* line 86, D:/xampp/htdocs/OLO/build/faq.scss */
+  .faq-section .wrap-content-faq .box-faq {
+    padding: 0 10px 30px 30px;
+    border-bottom: 1px dotted #505a5e; }
+    /* line 89, D:/xampp/htdocs/OLO/build/faq.scss */
+    .faq-section .wrap-content-faq .box-faq .block {
+      padding: 20px 0; }
+      /* line 91, D:/xampp/htdocs/OLO/build/faq.scss */
+      .faq-section .wrap-content-faq .box-faq .block .label {
+        font-size: 3.6rem;
+        font-family: 'Langdon';
+        color: #14a0aa;
+        padding: 0; }
+      /* line 100, D:/xampp/htdocs/OLO/build/faq.scss */
+      .faq-section .wrap-content-faq .box-faq .block .text {
+        float: right;
+        width: 85%;
+        font-size: 1.4rem;
+        font-family: "HiraKakuPro-W3-AlphaNum";
+        color: #505a5e;
+        padding-top: 5px; }
+      /* line 108, D:/xampp/htdocs/OLO/build/faq.scss */
+      .faq-section .wrap-content-faq .box-faq .block.block-A {
+        padding: 0; }
+        /* line 110, D:/xampp/htdocs/OLO/build/faq.scss */
+        .faq-section .wrap-content-faq .box-faq .block.block-A .label {
+          color: #fa7878; }
+    /* line 115, D:/xampp/htdocs/OLO/build/faq.scss */
+    .faq-section .wrap-content-faq .box-faq.last {
+      border-bottom: none; }

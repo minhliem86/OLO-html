@@ -59,6 +59,9 @@
 			form.formContact{
 				.form-group{
 					margin-bottom:25px;
+					&.text-note{
+						margin:20px 0 60px;
+					}
 					.left-form{
 						width:40%;
 						max-width:250px;
@@ -79,6 +82,19 @@
 						color:$cl-xamxanh;
 						@include fontW3;
 						font-size:1.4rem;
+					}
+					p.note-form{
+						@include fontW3;
+						font-size:1.4rem;
+						text-align:center;
+						a{
+							color:$cl-xanhngoc;
+						}
+					}
+					input.btn-submit{
+						background:$cl-xanhngoc;
+						color:white;
+						border:none;
 					}
 				}
 			}
