@@ -1,0 +1,133 @@
+@import 'common';
+
+.breadcrum{
+	padding:10px 0;
+	.breadcrum-me{
+		list-style-type:none;
+		li{
+			display:inline-block;
+			padding:0 15px;
+			position:relative;
+			a{
+				display:block;
+				@include fontW3;
+				font-size:1.4rem;
+				color:$cl-xamxanh;
+			}
+			&:after{
+				content:'/';
+				display:block;
+				position:absolute;
+				right:0;
+				top:0;
+			}
+			&:last-child:after{
+				content:'';
+			}
+			&.active{
+				a{
+					color:$cl-xanhngoc;
+					text-decoration:underline !important;;
+				}
+			}
+		}
+	}
+}
+.static-banner{
+	height:32rem;
+	background:url('../img/news/news-banner.jpg')no-repeat;
+	background-size:100%;
+	width:100%;
+	display:table;
+	@include media(767px){
+		height:auto;
+	}
+	.is-table-cell{
+		display:table-cell;
+		vertical-align:middle;
+	}
+}
+
+.news-section{
+	 .news-sidebar{
+	 	.box{
+	 		border-top:2px solid $cl-xanhngoc;
+	 		padding:20px 0  0;
+	 		margin-bottom:40px;
+	 		h3.title-box{
+	 			font-size:1.6rem;
+	 			@include fontW6;
+	 			color:$cl-xamxanh;
+	 			margin-bottom:20px;
+	 			padding-left:15px;
+	 		}
+	 		ul.list-box{
+	 			list-style-type:none;
+	 			padding-left:20px;
+	 			li{
+	 				display:block;
+	 				margin-bottom:10px;
+	 				&:last-child{
+	 					margin-bottom:0
+	 				}
+					a{
+						padding:3px 0;
+						display:block;
+						color:$cl-xanhngoc;
+						text-decoration:underline !important;
+						@include fontW3;
+						font-size:1.6rem;
+					}
+	 			}
+	 		}
+	 	}
+	}
+	.wrap-content-news{
+		padding:20px 0 0 50px;;
+		h3.title-each-news{
+			font-size:1.6rem;
+			@include fontW6;
+			color:$cl-xanhngoc;
+			padding-bottom:20px;
+			border-bottom:1px solid lighten($cl-xamxanh,20%);
+			margin-bottom:30px;
+		}
+		.each-news{
+			padding-bottom:35px;
+			margin-bottom:30px;
+			border-bottom:1px dotted lighten($cl-xamxanh,20%);
+			p.time{
+				font-size:1.4rem;
+				@include fontW3;
+				color:$cl-xamxanh;
+				margin-bottom:35px;
+			}
+			a.title-news{
+				font-size:1.6rem;
+				@include fontW6;
+				color:$cl-xanhngoc;
+				text-decoration:underline !important;
+			}
+		}
+	}
+	.pagination{
+		margin:0;
+		li{
+			display:inline-block;
+			padding:0 3px;
+			a{
+				display:block;
+				border:1px solid $cl-xanhngoc;
+				border-radius:50%;
+				padding:4px 8px;
+				font-size:1.2rem;
+				color:$cl-xanhngoc;
+				@include fontW6;
+				&:hover, &:focus{
+					background:#3cb4c8;
+					color:white;
+				}
+			}
+		}
+	}
+}

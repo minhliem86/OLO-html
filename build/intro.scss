@@ -1,0 +1,249 @@
+@import 'common';
+
+.breadcrum{
+	padding:10px 0;
+	.breadcrum-me{
+		list-style-type:none;
+		li{
+			display:inline-block;
+			padding:0 15px;
+			position:relative;
+			a{
+				display:block;
+				@include fontW3;
+				font-size:1.4rem;
+				color:$cl-xamxanh;
+			}
+			&:after{
+				content:'/';
+				display:block;
+				position:absolute;
+				right:0;
+				top:0;
+			}
+			&:last-child:after{
+				content:'';
+			}
+			&.active{
+				a{
+					color:$cl-xanhngoc;
+					text-decoration:underline !important;;
+				}
+			}
+		}
+	}
+}
+.static-banner{
+	height:32rem;
+	background:url('../img/introduction/intro-banner.jpg')no-repeat;
+	background-size:100%;
+	width:100%;
+	display:table;
+	@include media(767px){
+		height:auto;
+	}
+	.is-table-cell{
+		display:table-cell;
+		vertical-align:middle;
+	}
+	&.introduction03{
+		.left-banner{
+			width:20%;
+			display:inline-block;
+			vertical-align:middle;
+			img{
+				border-radius:50%;
+				border:1px solid white;
+			}
+		}
+		.right-banner{
+			width:75%;
+			display:inline-block;
+			vertical-align:middle;
+			color:white;
+			padding-left:40px;
+			.text-right-banner{
+				font-size:1.6rem;
+				@include fontW6;
+				padding:0 30px;
+				position:relative;
+				margin-bottom:25px;
+				line-height:2.5rem;
+				&:before, &:after{
+					content:'';
+					display:block;
+					position:absolute;
+					width:24px;
+					height:16px;
+				}
+				&:before{
+					background:url('../img/introduction/open-quote.png')no-repeat;
+					top:0;
+					left:0;
+				}
+				&:after{
+					background:url('../img/introduction/close-quote.png')no-repeat;
+					bottom:0;
+					right:0;
+				}
+			}
+			p{
+				font-size:1.2rem;
+				@include fontW3;
+			}
+			p.normal-text a{
+				color:white;
+				text-decoration:underline !important;
+			}
+			.wrap-title{
+				margin-top:20px;
+				.des{
+					margin-bottom:10px;
+					a{
+						text-align:center;
+						color:white;
+						border:1px solid white;
+						border-radius:3px;
+						display:inline-block;
+						width:120px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.introduction-section{
+	h2.title-section{
+		font-weight:600;
+		color:$cl-xanhngoc;
+		margin-bottom:60px;
+	}
+	.content-section{
+		.each-intro{
+			padding:0 20px;
+			margin-bottom:25px;
+			.container-img{
+				padding:0 10px;
+				margin-bottom:15px;
+				img{
+					margin:0 auto;
+				}
+			}
+			h3.title-intro{
+				font-size:1.8rem;
+				@include fontW6;
+				margin-bottom:10px;
+				text-decoration:underline;
+				text-align:center;
+				a{
+					color:$cl-xanhngoc;
+				}
+			}
+			p.content-intro{
+				font-size:1.2rem;
+				@include fontW3;
+				color:$cl-xamxanh;
+				text-align:center;
+				a{
+					color:$cl-xamxanh;
+				}
+			}
+
+		}
+	}
+}
+
+.introduction02-section{
+	.content-section{
+		.box-introduction02{
+			background:#14a0aa;
+			border-radius:4px;
+			text-align:center;
+			color:white;
+			padding:80px 0 50px 0;
+			h3.title-section{
+				font-size:4.8rem;
+				@include fontLangdon;
+				margin-bottom:25px;
+			}
+			p.sub{
+				font-size:1.2rem;
+				@include fontW3;
+				margin-bottom:35px;
+			}
+			.btn-me{
+				color:$cl-xanhngoc;
+			}
+		}
+	}
+}
+
+.introduction03-section{
+	.content-section{
+		.box-intro-big{
+			margin-bottom:65px;
+			img{
+				margin-bottom:20px;
+			}
+			p{
+				font-size:1.4rem;
+				@include fontW3;
+				color:$cl-xamxanh;
+			}
+		}
+		.box-intro-small{
+			margin-bottom:90px;
+			.left{
+				float:left;
+				width:60%;
+
+			}
+			.right{
+				float:right;
+				width:35%;
+				margin-left:5%;
+			}
+			&.im-left{
+				.left{
+					float:left;
+					width:35%;
+					margin-right:5%;
+				}
+				.right{
+					float:right;
+					width:60%;
+					margin-left:0%;
+				}
+			}
+			.title-intro-small{
+				font-size:1.8rem;
+				@include fontW6;
+				color:$cl-xanhngoc;
+				margin-bottom:25px;
+			}
+			p{
+				font-size:1.4rem;
+				@include fontW3;
+				color:$cl-xamxanh;
+			}
+			&.last{
+				margin-bottom:60px;
+			}
+		}
+
+		.wrap-img{
+			margin-bottom:60px;
+		}
+		.img-jumb{
+			margin-top:50px;
+			margin-left:50px;
+		}
+		.wrap-btn{
+			margin-top:40px;
+			.btn-me{
+				color:white;
+			}
+		}
+	}
+}

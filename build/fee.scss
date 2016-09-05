@@ -1,0 +1,148 @@
+@import 'common';
+
+.breadcrum{
+	padding:10px 0;
+	.breadcrum-me{
+		list-style-type:none;
+		li{
+			display:inline-block;
+			padding:0 15px;
+			position:relative;
+			a{
+				display:block;
+				@include fontW3;
+				font-size:1.4rem;
+				color:$cl-xamxanh;
+			}
+			&:after{
+				content:'/';
+				display:block;
+				position:absolute;
+				right:0;
+				top:0;
+			}
+			&:last-child:after{
+				content:'';
+			}
+			&.active{
+				a{
+					color:$cl-xanhngoc;
+					text-decoration:underline !important;;
+				}
+			}
+		}
+	}
+}
+.static-banner{
+	height:32rem;
+	background:url('../img/fee/fee-banner.jpg')no-repeat;
+	background-size:100%;
+	width:100%;
+	display:table;
+	@include media(767px){
+		height:auto;
+	}
+	.is-table-cell{
+		display:table-cell;
+		vertical-align:middle;
+	}
+}
+
+.fee-section{
+	h2.title-section{
+		font-weight:600;
+		color:$cl-xanhngoc;
+		margin-bottom:60px;
+	}
+	.content-section{
+		margin-bottom:70px;
+		.is-table-row{
+			display:table;
+			width:100%;
+			[class*="col-"]{
+				float:none;
+				display:table-cell;
+				vertical-align:top;
+			}
+		}
+		.price-area{
+			p.title-area{
+				font-size:1.6rem;
+				color:white;
+				@include fontW6;
+				padding:20px 0 ;
+				text-align:center;
+				border-bottom:1px solid white;
+			}
+			.content-area{
+				padding:75px 0 30px;
+				text-align:center;
+				color:white;
+				p.price-num{
+					@include fontLangdon;
+					font-weight:600;
+					font-size:7.5rem;
+					line-height:7.5rem;
+				}
+				p.sub-price{
+					font-size:2.0rem;
+					@include fontW6;
+					padding-right:15px;
+				}
+				p.desc-price{
+					margin-top:60px;
+					font-size:1.4rem;
+					@include fontW3;
+
+				}
+			}
+		}
+
+		// WRAP TABLE
+		.wrap-table{
+			margin-top:60px;
+			table{
+				thead{
+					th{
+						padding:15px 0;
+						color:white;
+						@include fontW6;
+						font-size:1.6rem;
+						text-align:center;
+					}
+					th:nth-child(1){
+						background:lighten(#14b4c8,10%);
+						width:40%;
+					}
+					th:nth-child(2){
+						background:#14b4c8;
+						width:20%;
+					}
+					th:nth-child(3){
+						background:#2896c8;
+						width:20%;
+					}
+					th:nth-child(4){
+						background:#2878b4;
+						width:20%;
+					}
+				}
+				tbody{
+					td{
+						text-align:center;
+						padding:15px 0;
+						@include fontW3;
+						font-size:1.2rem;
+						&:first-child{
+							text-align:right;
+							padding-right:25px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.btn-me{
+		color:white;
+	}
+}

@@ -1,0 +1,62 @@
+@import 'common';
+
+.breadcrum{
+	padding:10px 0;
+	.breadcrum-me{
+		list-style-type:none;
+		li{
+			display:inline-block;
+			padding:0 15px;
+			position:relative;
+			a{
+				display:block;
+				@include fontW3;
+				font-size:1.4rem;
+				color:$cl-xamxanh;
+			}
+			&:after{
+				content:'/';
+				display:block;
+				position:absolute;
+				right:0;
+				top:0;
+			}
+			&:last-child:after{
+				content:'';
+			}
+			&.active{
+				a{
+					color:$cl-xanhngoc;
+					text-decoration:underline !important;;
+				}
+			}
+		}
+	}
+}
+.static-banner{
+	height:32rem;
+	background:url('../img/policy/policy-banner.jpg')no-repeat;
+	background-size:100%;
+	width:100%;
+	display:table;
+	@include media(767px){
+		height:auto;
+	}
+	.is-table-cell{
+		display:table-cell;
+		vertical-align:middle;
+	}
+}
+
+.signage-section{
+	.content-section{
+		.row{
+			padding:20px 0;
+		}
+		p{
+			font-size:1.4rem;
+			@include fontW3;
+			color:$cl-xamxanh;
+		}
+	}
+}

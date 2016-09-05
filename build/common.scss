@@ -89,25 +89,57 @@ $cl-whiteblue:#ddeff1;
 	width:100%;
 	z-index:9999;
 	@include transition(all 0.3s);
+	@include media(479px){
+		padding:5px 0;
+		height:auto;
+	}
 	&.bg-color{
 		background:url('../img/bg-header.jpg')no-repeat;
 		background-size:100% 100%;
 	}
 	.wrap-logo{
 		padding-top:15px;
+		float:left;
+	}
+	.navbar-header-trigger{
+		float:right;
+		.navbar-toggle{
+			span.icon-bar{
+				height:2px;
+				background:white;
+			}
+		}
 	}
 	// NAVIGATION
 	.navbar-me{
 		padding-top:20px;
+		@include media(479px){
+			padding-top:0;
+			background:white;
+		}
+
 	}
 	.main-navigation{
 		float:right;
+		@include media(479px){
+			float:none;
+		}
 		li{
 			float:left;
 			padding:0 15px;
 			list-style-type:none;
+			@include media(479px){
+				display:block;
+				float:none;
+				margin-bottom:10px;
+			}
+
 			&:last-child{
 				padding:0;
+				@include media(479px){
+					padding:0 15px;
+				}
+					
 			}
 			a{
 				display:block;
@@ -118,6 +150,11 @@ $cl-whiteblue:#ddeff1;
 				&:hover{
 					color:$cl-xamxanh;
 				}
+				@include media(479px){
+					color:$cl-xanhngoc;
+					padding:3px 0;
+				}
+
 			}
 		}
 	}
@@ -138,6 +175,9 @@ $cl-whiteblue:#ddeff1;
 		.left-banner{
 			position:relative;
 			padding-top:130px;
+			@include media(479px){
+				margin-bottom:30px;
+			}
 			.title-banner{
 				@inlcude fontW6;
 				font-size:2.2rem;
@@ -148,6 +188,10 @@ $cl-whiteblue:#ddeff1;
 				&.mrbot{
 					margin-bottom:2.5rem;
 				}
+				@include media(479px){
+					font-size:1.8rem
+				}
+
 			}
 			.sub-banner{
 				font-size:1.4rem;
