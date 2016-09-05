@@ -89,13 +89,13 @@ $cl-whiteblue:#ddeff1;
 	width:100%;
 	z-index:9999;
 	@include transition(all 0.3s);
-	@include media(479px){
-		padding:5px 0;
-		height:auto;
-	}
 	&.bg-color{
 		background:url('../img/bg-header.jpg')no-repeat;
 		background-size:100% 100%;
+	}
+	@include media(767px){
+		padding:5px 0;
+		height:auto;
 	}
 	.wrap-logo{
 		padding-top:15px;
@@ -113,7 +113,7 @@ $cl-whiteblue:#ddeff1;
 	// NAVIGATION
 	.navbar-me{
 		padding-top:20px;
-		@include media(479px){
+		@include media(767px){
 			padding-top:0;
 			background:white;
 		}
@@ -121,14 +121,14 @@ $cl-whiteblue:#ddeff1;
 	}
 	.main-navigation{
 		float:right;
-		@include media(479px){
+		@include media(767px){
 			float:none;
 		}
 		li{
 			float:left;
 			padding:0 15px;
 			list-style-type:none;
-			@include media(479px){
+			@include media(767px){
 				display:block;
 				float:none;
 				margin-bottom:10px;
@@ -136,7 +136,7 @@ $cl-whiteblue:#ddeff1;
 
 			&:last-child{
 				padding:0;
-				@include media(479px){
+				@include media(767px){
 					padding:0 15px;
 				}
 					
@@ -150,7 +150,7 @@ $cl-whiteblue:#ddeff1;
 				&:hover{
 					color:$cl-xamxanh;
 				}
-				@include media(479px){
+				@include media(767px){
 					color:$cl-xanhngoc;
 					padding:3px 0;
 				}
@@ -175,7 +175,7 @@ $cl-whiteblue:#ddeff1;
 		.left-banner{
 			position:relative;
 			padding-top:130px;
-			@include media(479px){
+			@include media(767px){
 				margin-bottom:30px;
 			}
 			.title-banner{
@@ -188,8 +188,9 @@ $cl-whiteblue:#ddeff1;
 				&.mrbot{
 					margin-bottom:2.5rem;
 				}
-				@include media(479px){
-					font-size:1.8rem
+				@include media(767px){
+					font-size:1.8rem;
+					margin-bottom:10px;
 				}
 
 			}
@@ -346,9 +347,18 @@ p.sub-title-page{
 				}
 			}
 		}
+		@include media(767px){
+			margin-bottom:20px;
+			li{
+				text-align: center;
+			}
+		}
 	}
 	.wrap-right{
 		float:right;
+		@include media(767px){
+			float:none
+		}
 	}
 	.wrap-btn-footer{
 		&.btn-above{

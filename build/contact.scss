@@ -73,10 +73,18 @@
 							@include fontW3;
 							font-size:1.4rem;
 						}
+						@include media(767px){
+							float:none;
+							width:100%;
+						}
 					}
 					.right-form{
 						width:60%;
 						float:right;
+						@include media(767px){
+							float:none;
+							width:100%;
+						}
 					}
 					label{
 						color:$cl-xamxanh;

@@ -63,6 +63,13 @@
 				float:none;
 				display:table-cell;
 				vertical-align:top;
+				
+				@include media(767px){
+					display:block;
+				}
+			}
+			@include media(767px){
+				display:initial;
 			}
 		}
 		.price-area{
@@ -113,18 +120,30 @@
 					th:nth-child(1){
 						background:lighten(#14b4c8,10%);
 						width:40%;
+						@include media(767px){
+							width:25%
+						}
 					}
 					th:nth-child(2){
 						background:#14b4c8;
 						width:20%;
+						@include media(767px){
+							width:25%
+						}
 					}
 					th:nth-child(3){
 						background:#2896c8;
 						width:20%;
+						@include media(767px){
+							width:25%
+						}
 					}
 					th:nth-child(4){
 						background:#2878b4;
 						width:20%;
+						@include media(767px){
+							width:25%
+						}
 					}
 				}
 				tbody{

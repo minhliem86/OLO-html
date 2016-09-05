@@ -1,0 +1,212 @@
+@import url("../fonts/langdon/font.css");
+@import url("../fonts/HiraKakuPro-W3/font.css");
+@import url("../fonts/HiraKakuPro-W6/font.css");
+/* line 5, D:/xampp/htdocs/OLO/build/blog.scss */
+* {
+  margin: 0;
+  padding: 0; }
+
+/* line 6, D:/xampp/htdocs/OLO/build/blog.scss */
+html {
+  font-size: 62.5%; }
+
+/* line 7, D:/xampp/htdocs/OLO/build/blog.scss */
+body {
+  font-size: 14px;
+  font-size: 1.4rem; }
+
+/* line 8, D:/xampp/htdocs/OLO/build/blog.scss */
+ul, ol {
+  margin: 0; }
+
+/* line 9, D:/xampp/htdocs/OLO/build/blog.scss */
+a, a:hover {
+  text-decoration: none !important;
+  outline: none !important; }
+
+/* line 10, D:/xampp/htdocs/OLO/build/blog.scss */
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.4rem; }
+
+/* line 12, D:/xampp/htdocs/OLO/build/blog.scss */
+.clear {
+  clear: both; }
+
+/* line 51, D:/xampp/htdocs/OLO/build/blog.scss */
+.white-bg {
+  background: white; }
+
+/* line 52, D:/xampp/htdocs/OLO/build/blog.scss */
+.gray-bg {
+  background: #f9fafb; }
+
+/* line 53, D:/xampp/htdocs/OLO/build/blog.scss */
+.blue-bg {
+  background: #14a0aa; }
+
+/* line 54, D:/xampp/htdocs/OLO/build/blog.scss */
+.price1 {
+  background: #14b4c8; }
+
+/* line 55, D:/xampp/htdocs/OLO/build/blog.scss */
+.price2 {
+  background: #2896c8; }
+
+/* line 56, D:/xampp/htdocs/OLO/build/blog.scss */
+.price3 {
+  background: #2878b4; }
+
+/* line 58, D:/xampp/htdocs/OLO/build/blog.scss */
+.btn-me {
+  width: 100%;
+  padding: 6px 0;
+  max-width: 280px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s; }
+  /* line 67, D:/xampp/htdocs/OLO/build/blog.scss */
+  .btn-me:hover, .btn-me:focus {
+    box-shadow: 1px 1px 5px 0 #67747a; }
+
+/* line 71, D:/xampp/htdocs/OLO/build/blog.scss */
+.btn-xanhla {
+  background: #e0fa50; }
+
+/* line 72, D:/xampp/htdocs/OLO/build/blog.scss */
+.btn-xanhduong {
+  background: #14a0aa; }
+
+/* line 73, D:/xampp/htdocs/OLO/build/blog.scss */
+.btn-lightgreen {
+  background: #e0fa50; }
+
+/* line 75, D:/xampp/htdocs/OLO/build/blog.scss */
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0; }
+
+/* line 83, D:/xampp/htdocs/OLO/build/blog.scss */
+.is-table {
+  display: table;
+  width: 100%; }
+  /* line 86, D:/xampp/htdocs/OLO/build/blog.scss */
+  .is-table .is-table-cell {
+    display: table-cell;
+    vertical-align: middle; }
+
+/* line 94, D:/xampp/htdocs/OLO/build/blog.scss */
+.header {
+  background: url("../img/bg-header.jpg") no-repeat;
+  background-size: 100%; }
+  /* line 97, D:/xampp/htdocs/OLO/build/blog.scss */
+  .header .inner-header {
+    height: 7.5rem; }
+    /* line 99, D:/xampp/htdocs/OLO/build/blog.scss */
+    .header .inner-header .left-header, .header .inner-header .right-header {
+      display: inline-block;
+      width: 49%;
+      vertical-align: middle; }
+    /* line 104, D:/xampp/htdocs/OLO/build/blog.scss */
+    .header .inner-header .right-header {
+      text-align: right;
+      color: white; }
+
+/* line 111, D:/xampp/htdocs/OLO/build/blog.scss */
+.middle .banner {
+  background: url("../img/blog/bg-blog.jpg") no-repeat;
+  background-size: 100%; }
+  /* line 114, D:/xampp/htdocs/OLO/build/blog.scss */
+  .middle .banner .wrap-banner {
+    height: 500px;
+    text-align: center; }
+    /* line 117, D:/xampp/htdocs/OLO/build/blog.scss */
+    .middle .banner .wrap-banner img {
+      margin: 0 auto 45px; }
+    /* line 120, D:/xampp/htdocs/OLO/build/blog.scss */
+    .middle .banner .wrap-banner p.sub-title-banner {
+      font-size: 2.2rem;
+      font-family: "HiraKakuPro-W6-AlphaNum";
+      margin-bottom: 80px;
+      color: white; }
+    /* line 128, D:/xampp/htdocs/OLO/build/blog.scss */
+    .middle .banner .wrap-banner .wrap-tab-banner .list-banner {
+      list-style-type: none;
+      display: inline-block;
+      text-align: center; }
+      /* line 132, D:/xampp/htdocs/OLO/build/blog.scss */
+      .middle .banner .wrap-banner .wrap-tab-banner .list-banner li {
+        float: left;
+        margin-right: 10px; }
+        /* line 135, D:/xampp/htdocs/OLO/build/blog.scss */
+        .middle .banner .wrap-banner .wrap-tab-banner .list-banner li a {
+          display: block;
+          padding: 6px 0;
+          text-align: center;
+          width: 140px;
+          color: #14a0aa;
+          background: white;
+          border-radius: 4px;
+          transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -o-transition: all 0.3s; }
+          /* line 144, D:/xampp/htdocs/OLO/build/blog.scss */
+          .middle .banner .wrap-banner .wrap-tab-banner .list-banner li a:hover {
+            color: #505a5e; }
+
+/* line 154, D:/xampp/htdocs/OLO/build/blog.scss */
+.middle .section-content {
+  padding: 65px 0 150px; }
+  /* line 157, D:/xampp/htdocs/OLO/build/blog.scss */
+  .middle .section-content .wrap-content .each-content {
+    background: white;
+    margin-bottom: 30px; }
+    /* line 160, D:/xampp/htdocs/OLO/build/blog.scss */
+    .middle .section-content .wrap-content .each-content.last {
+      margin-bottom: 0; }
+    /* line 163, D:/xampp/htdocs/OLO/build/blog.scss */
+    .middle .section-content .wrap-content .each-content .top-area {
+      padding: 4px 15px; }
+      /* line 165, D:/xampp/htdocs/OLO/build/blog.scss */
+      .middle .section-content .wrap-content .each-content .top-area p.time {
+        display: inline-block; }
+      /* line 168, D:/xampp/htdocs/OLO/build/blog.scss */
+      .middle .section-content .wrap-content .each-content .top-area p.title-time {
+        display: inline-block;
+        text-align: right;
+        float: right; }
+    /* line 174, D:/xampp/htdocs/OLO/build/blog.scss */
+    .middle .section-content .wrap-content .each-content .wrap-main-content {
+      padding: 20px; }
+      /* line 176, D:/xampp/htdocs/OLO/build/blog.scss */
+      .middle .section-content .wrap-content .each-content .wrap-main-content h2.title-content {
+        font-size: 1.8rem;
+        font-family: "HiraKakuPro-W6-AlphaNum";
+        color: #505a5e;
+        margin-bottom: 25px; }
+    /* line 183, D:/xampp/htdocs/OLO/build/blog.scss */
+    .middle .section-content .wrap-content .each-content p.writer {
+      padding: 10px 20px;
+      text-align: right;
+      font-size: 1.2rem;
+      font-family: "HiraKakuPro-W6-AlphaNum";
+      color: #14a0aa; }
+      /* line 189, D:/xampp/htdocs/OLO/build/blog.scss */
+      .middle .section-content .wrap-content .each-content p.writer span {
+        font-size: 1rem;
+        font-family: "HiraKakuPro-W3-AlphaNum";
+        color: #505a5e; }
+    /* line 195, D:/xampp/htdocs/OLO/build/blog.scss */
+    .middle .section-content .wrap-content .each-content .social-area {
+      padding: 10px 0; }

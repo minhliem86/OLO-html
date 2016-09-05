@@ -1,0 +1,203 @@
+@import url('../fonts/langdon/font.css');
+@import url('../fonts/HiraKakuPro-W3/font.css');
+@import url('../fonts/HiraKakuPro-W6/font.css');
+
+*{margin:0; padding:0}
+html{font-size:62.5%}
+body{font-size:14px; font-size:1.4rem}
+ul, ol{margin:0}
+a, a:hover{text-decoration: none !important; outline: none !important}
+h1,h2,h3,h4, p{margin:0; padding:0; font-size:1.4rem}
+
+.clear{clear:both}
+
+// DEFINE COLOR
+$cl-xanhngoc:#14a0aa;
+$cl-xamxanh:#505a5e;
+$cl-xanhla:#e0fa50;
+$cl-whiteblue:#ddeff1;
+
+
+// DEFINE MIXIN
+@mixin fontW3(){
+	font-family: 'HiraKakuPro-W3-AlphaNum',
+}
+@mixin fontW6(){
+	font-family: 'HiraKakuPro-W6-AlphaNum',
+}
+@mixin fontLangdon(){
+	font-family: 'Langdon';
+}
+
+@mixin transition($tran...){
+	transition:$tran;
+	-webkit-transition:$tran;
+	-moz-transition:$tran;
+	-o-transition:$tran;
+}
+@mixin animation ($key...){
+	animation: $key;
+	-webkit-animation: $key;
+	-moz-animation: $key;
+}
+@mixin media($width){
+	@media screen and (max-width:$width){
+		@content;
+	}
+}
+
+// DEFINE
+
+.white-bg{background:white;}
+.gray-bg{background:#f9fafb}
+.blue-bg{background:#14a0aa}
+.price1{background:#14b4c8}
+.price2{background:#2896c8}
+.price3{background:#2878b4}
+
+.btn-me{
+	width:100%;
+	padding:6px 0;
+	max-width:280px;
+	display:inline-block;
+	text-align:center;
+	border-radius:5px;
+	font-size:1.4rem;
+	@include transition(all 0.4s);
+	&:hover, &:focus{
+		box-shadow:1px 1px 5px 0 lighten(#505a5e,10%);
+	}
+}
+.btn-xanhla{background:#e0fa50}
+.btn-xanhduong{background:#14a0aa}
+.btn-lightgreen{background:#e0fa50}
+
+.sticky{
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 0;
+	z-index: 100;
+	border-top: 0;
+}
+.is-table{
+ 	display:table;
+ 	width:100%;
+ 	.is-table-cell{
+
+ 		display:table-cell;
+ 		vertical-align: middle;
+ 	}
+}
+
+// HEADER
+.header{
+	 background:url('../img/bg-header.jpg')no-repeat;
+	 background-size:100%;
+	 .inner-header{
+	 	height:7.5rem;
+	 	.left-header, .right-header{
+	 		display:inline-block;
+	 		width:49%;
+	 		vertical-align: middle;
+	 	}
+	 	.right-header{
+	 		text-align: right;
+	 		color:white;
+	 	}
+	 }
+}
+.middle{
+	.banner{
+		background:url('../img/blog/bg-blog.jpg')no-repeat;
+		background-size:100%;
+		.wrap-banner{
+			height:500px;
+			text-align: center;
+			img{
+				margin:0 auto 45px;
+			}
+			p.sub-title-banner{
+				font-size:2.2rem;
+				@include fontW6;
+				margin-bottom:80px;
+	 			color:white;
+		 		
+			}
+			.wrap-tab-banner{
+	 			.list-banner{
+	 				list-style-type:none;
+	 				display: inline-block;
+	 				text-align: center;
+	 				li{
+	 					float:left;
+	 					margin-right:10px;
+	 					a{
+							display:block;
+							padding:6px 0;
+							text-align: center;
+							width:140px;
+							color:$cl-xanhngoc;
+							background:white;
+							border-radius:4px;
+							@include transition(all 0.3s)
+							&:hover{
+								color:$cl-xamxanh;
+							}
+	 					}
+	 				}
+	 			}
+	 		}
+		}
+	}
+
+	.section-content{
+		padding:65px 0 150px;
+		.wrap-content{
+			.each-content{
+				background:white;
+				margin-bottom:30px;
+				&.last{
+					margin-bottom:0;
+				}
+				.top-area{
+					padding:4px 15px;
+					p.time{
+						display:inline-block;
+					}
+					p.title-time{
+						display:inline-block;
+						text-align:right;
+						float:right;
+					}
+				}
+				.wrap-main-content{
+					padding:20px;
+					h2.title-content{
+						font-size:1.8rem;
+						@include fontW6;
+						color:$cl-xamxanh;
+						margin-bottom:25px;
+					}
+				}
+				p.writer{
+					padding:10px 20px;
+					text-align:right;
+					font-size:1.2rem;
+					@include fontW6;
+					color:$cl-xanhngoc;
+					span{
+						font-size:1rem;
+						@include fontW3;
+						color:$cl-xamxanh
+					}
+				}
+				.social-area{
+					padding:10px 0;
+				}
+			}
+		}
+	}
+}
+
+

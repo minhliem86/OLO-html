@@ -111,24 +111,56 @@ h1, h2, h3, h4, p {
   .header.bg-color {
     background: url("../img/bg-header.jpg") no-repeat;
     background-size: 100% 100%; }
-  /* line 96, D:/xampp/htdocs/OLO/build/common.scss */
-  .header .wrap-logo {
-    padding-top: 15px; }
+  @media screen and (max-width: 767px) {
+    /* line 85, D:/xampp/htdocs/OLO/build/common.scss */
+    .header {
+      padding: 5px 0;
+      height: auto; } }
   /* line 100, D:/xampp/htdocs/OLO/build/common.scss */
+  .header .wrap-logo {
+    padding-top: 15px;
+    float: left; }
+  /* line 104, D:/xampp/htdocs/OLO/build/common.scss */
+  .header .navbar-header-trigger {
+    float: right; }
+    /* line 107, D:/xampp/htdocs/OLO/build/common.scss */
+    .header .navbar-header-trigger .navbar-toggle span.icon-bar {
+      height: 2px;
+      background: white; }
+  /* line 114, D:/xampp/htdocs/OLO/build/common.scss */
   .header .navbar-me {
     padding-top: 20px; }
-  /* line 103, D:/xampp/htdocs/OLO/build/common.scss */
+    @media screen and (max-width: 767px) {
+      /* line 114, D:/xampp/htdocs/OLO/build/common.scss */
+      .header .navbar-me {
+        padding-top: 0;
+        background: white; } }
+  /* line 122, D:/xampp/htdocs/OLO/build/common.scss */
   .header .main-navigation {
     float: right; }
-    /* line 105, D:/xampp/htdocs/OLO/build/common.scss */
+    @media screen and (max-width: 767px) {
+      /* line 122, D:/xampp/htdocs/OLO/build/common.scss */
+      .header .main-navigation {
+        float: none; } }
+    /* line 127, D:/xampp/htdocs/OLO/build/common.scss */
     .header .main-navigation li {
       float: left;
       padding: 0 15px;
       list-style-type: none; }
-      /* line 109, D:/xampp/htdocs/OLO/build/common.scss */
+      @media screen and (max-width: 767px) {
+        /* line 127, D:/xampp/htdocs/OLO/build/common.scss */
+        .header .main-navigation li {
+          display: block;
+          float: none;
+          margin-bottom: 10px; } }
+      /* line 137, D:/xampp/htdocs/OLO/build/common.scss */
       .header .main-navigation li:last-child {
         padding: 0; }
-      /* line 112, D:/xampp/htdocs/OLO/build/common.scss */
+        @media screen and (max-width: 767px) {
+          /* line 137, D:/xampp/htdocs/OLO/build/common.scss */
+          .header .main-navigation li:last-child {
+            padding: 0 15px; } }
+      /* line 144, D:/xampp/htdocs/OLO/build/common.scss */
       .header .main-navigation li a {
         display: block;
         color: white;
@@ -138,29 +170,38 @@ h1, h2, h3, h4, p {
         -webkit-transition: color 0.3s;
         -moz-transition: color 0.3s;
         -o-transition: color 0.3s; }
-        /* line 118, D:/xampp/htdocs/OLO/build/common.scss */
+        /* line 150, D:/xampp/htdocs/OLO/build/common.scss */
         .header .main-navigation li a:hover {
           color: #505a5e; }
+        @media screen and (max-width: 767px) {
+          /* line 144, D:/xampp/htdocs/OLO/build/common.scss */
+          .header .main-navigation li a {
+            color: #14a0aa;
+            padding: 3px 0; } }
 
-/* line 126, D:/xampp/htdocs/OLO/build/common.scss */
+/* line 163, D:/xampp/htdocs/OLO/build/common.scss */
 .middle-content.sub-page {
   padding-top: 7.5rem; }
 
-/* line 130, D:/xampp/htdocs/OLO/build/common.scss */
+/* line 167, D:/xampp/htdocs/OLO/build/common.scss */
 .banner {
   padding-top: 7.5rem;
   background: url("../img/bg-header.jpg") no-repeat;
   background-size: 100% 100%;
   position: relative; }
-  /* line 135, D:/xampp/htdocs/OLO/build/common.scss */
+  /* line 172, D:/xampp/htdocs/OLO/build/common.scss */
   .banner .inner-banner {
     padding: 50px 0 75px;
     position: relative; }
-    /* line 138, D:/xampp/htdocs/OLO/build/common.scss */
+    /* line 175, D:/xampp/htdocs/OLO/build/common.scss */
     .banner .inner-banner .left-banner {
       position: relative;
       padding-top: 130px; }
-      /* line 141, D:/xampp/htdocs/OLO/build/common.scss */
+      @media screen and (max-width: 767px) {
+        /* line 175, D:/xampp/htdocs/OLO/build/common.scss */
+        .banner .inner-banner .left-banner {
+          margin-bottom: 30px; } }
+      /* line 181, D:/xampp/htdocs/OLO/build/common.scss */
       .banner .inner-banner .left-banner .title-banner {
         @inlcude fontW6;
         font-size: 2.2rem;
@@ -168,46 +209,51 @@ h1, h2, h3, h4, p {
         line-height: 1.8rem;
         font-weight: 600;
         text-align: center; }
-        /* line 148, D:/xampp/htdocs/OLO/build/common.scss */
+        /* line 188, D:/xampp/htdocs/OLO/build/common.scss */
         .banner .inner-banner .left-banner .title-banner.mrbot {
           margin-bottom: 2.5rem; }
-      /* line 152, D:/xampp/htdocs/OLO/build/common.scss */
+        @media screen and (max-width: 767px) {
+          /* line 181, D:/xampp/htdocs/OLO/build/common.scss */
+          .banner .inner-banner .left-banner .title-banner {
+            font-size: 1.8rem;
+            margin-bottom: 10px; } }
+      /* line 197, D:/xampp/htdocs/OLO/build/common.scss */
       .banner .inner-banner .left-banner .sub-banner {
         font-size: 1.4rem;
         font-family: "HiraKakuPro-W3-AlphaNum";
         margin-bottom: 3.0rem;
         color: white;
         text-align: right; }
-      /* line 159, D:/xampp/htdocs/OLO/build/common.scss */
+      /* line 204, D:/xampp/htdocs/OLO/build/common.scss */
       .banner .inner-banner .left-banner .btn-me {
         color: #14a0aa; }
-      /* line 162, D:/xampp/htdocs/OLO/build/common.scss */
+      /* line 207, D:/xampp/htdocs/OLO/build/common.scss */
       .banner .inner-banner .left-banner .ic {
         position: absolute; }
-        /* line 164, D:/xampp/htdocs/OLO/build/common.scss */
+        /* line 209, D:/xampp/htdocs/OLO/build/common.scss */
         .banner .inner-banner .left-banner .ic.fb-ic {
           top: 18%;
           left: 27%; }
-        /* line 168, D:/xampp/htdocs/OLO/build/common.scss */
+        /* line 213, D:/xampp/htdocs/OLO/build/common.scss */
         .banner .inner-banner .left-banner .ic.twitter-ic {
           top: 15%;
           left: 65%; }
-        /* line 172, D:/xampp/htdocs/OLO/build/common.scss */
+        /* line 217, D:/xampp/htdocs/OLO/build/common.scss */
         .banner .inner-banner .left-banner .ic.in-ic {
           top: 10%;
           left: 45%; }
-        /* line 176, D:/xampp/htdocs/OLO/build/common.scss */
+        /* line 221, D:/xampp/htdocs/OLO/build/common.scss */
         .banner .inner-banner .left-banner .ic.vine-ic {
           top: 0%;
           left: 35%; }
-    /* line 184, D:/xampp/htdocs/OLO/build/common.scss */
+    /* line 229, D:/xampp/htdocs/OLO/build/common.scss */
     .banner .inner-banner .right-banner img {
       margin-bottom: 15px; }
-    /* line 187, D:/xampp/htdocs/OLO/build/common.scss */
+    /* line 232, D:/xampp/htdocs/OLO/build/common.scss */
     .banner .inner-banner .right-banner p.sub-banner {
       color: white;
       text-align: right; }
-  /* line 193, D:/xampp/htdocs/OLO/build/common.scss */
+  /* line 238, D:/xampp/htdocs/OLO/build/common.scss */
   .banner .btn-down {
     position: absolute;
     left: 50%;
@@ -217,46 +263,46 @@ h1, h2, h3, h4, p {
     -moz-transform: translateX(-50%);
     animation: btndown 2s infinite; }
 
-/* line 204, D:/xampp/htdocs/OLO/build/common.scss */
+/* line 249, D:/xampp/htdocs/OLO/build/common.scss */
 .section {
   padding: 8rem 0; }
-  /* line 206, D:/xampp/htdocs/OLO/build/common.scss */
+  /* line 251, D:/xampp/htdocs/OLO/build/common.scss */
   .section h2.title-section {
     font-size: 2.2rem;
     font-family: "HiraKakuPro-W6-AlphaNum";
     text-align: center; }
-    /* line 210, D:/xampp/htdocs/OLO/build/common.scss */
+    /* line 255, D:/xampp/htdocs/OLO/build/common.scss */
     .section h2.title-section.h14 {
       font-size: 1.4rem; }
-  /* line 214, D:/xampp/htdocs/OLO/build/common.scss */
+  /* line 259, D:/xampp/htdocs/OLO/build/common.scss */
   .section .wrap-btn-section {
     margin-top: 30px; }
 
-/* line 219, D:/xampp/htdocs/OLO/build/common.scss */
+/* line 264, D:/xampp/htdocs/OLO/build/common.scss */
 .contact-section {
   position: relative; }
-  /* line 221, D:/xampp/htdocs/OLO/build/common.scss */
+  /* line 266, D:/xampp/htdocs/OLO/build/common.scss */
   .contact-section p.title-contact {
     font-size: 1.6rem;
     font-family: "HiraKakuPro-W6-AlphaNum";
     color: white;
     text-align: center;
     margin-bottom: 30px; }
-  /* line 228, D:/xampp/htdocs/OLO/build/common.scss */
+  /* line 273, D:/xampp/htdocs/OLO/build/common.scss */
   .contact-section .wrap-phone {
     max-width: 440px;
     margin: 30px auto 0; }
-    /* line 231, D:/xampp/htdocs/OLO/build/common.scss */
+    /* line 276, D:/xampp/htdocs/OLO/build/common.scss */
     .contact-section .wrap-phone p {
       color: white;
       font-size: 1.6rem;
       font-family: "HiraKakuPro-W6-AlphaNum"; }
-    /* line 236, D:/xampp/htdocs/OLO/build/common.scss */
+    /* line 281, D:/xampp/htdocs/OLO/build/common.scss */
     .contact-section .wrap-phone p.phone {
       float: left;
       padding-left: 40px;
       position: relative; }
-      /* line 240, D:/xampp/htdocs/OLO/build/common.scss */
+      /* line 285, D:/xampp/htdocs/OLO/build/common.scss */
       .contact-section .wrap-phone p.phone:before {
         content: '';
         display: block;
@@ -266,10 +312,10 @@ h1, h2, h3, h4, p {
         width: 25px;
         height: 25px;
         background: url("../img/phone-icon.png") no-repeat; }
-    /* line 251, D:/xampp/htdocs/OLO/build/common.scss */
+    /* line 296, D:/xampp/htdocs/OLO/build/common.scss */
     .contact-section .wrap-phone p.time {
       float: right; }
-  /* line 256, D:/xampp/htdocs/OLO/build/common.scss */
+  /* line 301, D:/xampp/htdocs/OLO/build/common.scss */
   .contact-section a.btn-up {
     position: absolute;
     left: 50%;
@@ -278,7 +324,7 @@ h1, h2, h3, h4, p {
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%); }
 
-/* line 267, D:/xampp/htdocs/OLO/build/common.scss */
+/* line 312, D:/xampp/htdocs/OLO/build/common.scss */
 h1.title-page {
   font-size: 4.2rem;
   color: white;
@@ -287,7 +333,7 @@ h1.title-page {
   text-align: center;
   margin-bottom: 25px; }
 
-/* line 275, D:/xampp/htdocs/OLO/build/common.scss */
+/* line 320, D:/xampp/htdocs/OLO/build/common.scss */
 p.sub-title-page {
   font-size: 1.6rem;
   color: white;
@@ -295,62 +341,73 @@ p.sub-title-page {
   font-family: "HiraKakuPro-W3-AlphaNum";
   text-align: center; }
 
-/* line 283, D:/xampp/htdocs/OLO/build/common.scss */
+/* line 328, D:/xampp/htdocs/OLO/build/common.scss */
 .footer {
   padding: 100px 0 125px; }
-  /* line 286, D:/xampp/htdocs/OLO/build/common.scss */
+  /* line 331, D:/xampp/htdocs/OLO/build/common.scss */
   .footer .navigation-footer {
     list-style-type: none; }
-    /* line 288, D:/xampp/htdocs/OLO/build/common.scss */
+    /* line 333, D:/xampp/htdocs/OLO/build/common.scss */
     .footer .navigation-footer li {
       display: block;
       margin-bottom: 10px; }
-      /* line 291, D:/xampp/htdocs/OLO/build/common.scss */
+      /* line 336, D:/xampp/htdocs/OLO/build/common.scss */
       .footer .navigation-footer li:last-child {
         margin-bottom: 0; }
-      /* line 294, D:/xampp/htdocs/OLO/build/common.scss */
+      /* line 339, D:/xampp/htdocs/OLO/build/common.scss */
       .footer .navigation-footer li a {
         display: block;
         padding: 3px 0;
         color: #505a5e;
         font-family: "HiraKakuPro-W3-AlphaNum";
         font-size: 1.4rem; }
-        /* line 300, D:/xampp/htdocs/OLO/build/common.scss */
+        /* line 345, D:/xampp/htdocs/OLO/build/common.scss */
         .footer .navigation-footer li a:hover {
           text-decoration: underline !important; }
-  /* line 306, D:/xampp/htdocs/OLO/build/common.scss */
+    @media screen and (max-width: 767px) {
+      /* line 331, D:/xampp/htdocs/OLO/build/common.scss */
+      .footer .navigation-footer {
+        margin-bottom: 20px; }
+        /* line 352, D:/xampp/htdocs/OLO/build/common.scss */
+        .footer .navigation-footer li {
+          text-align: center; } }
+  /* line 357, D:/xampp/htdocs/OLO/build/common.scss */
   .footer .wrap-right {
     float: right; }
-  /* line 310, D:/xampp/htdocs/OLO/build/common.scss */
+    @media screen and (max-width: 767px) {
+      /* line 357, D:/xampp/htdocs/OLO/build/common.scss */
+      .footer .wrap-right {
+        float: none; } }
+  /* line 364, D:/xampp/htdocs/OLO/build/common.scss */
   .footer .wrap-btn-footer.btn-above {
     margin-bottom: 10px; }
-    /* line 312, D:/xampp/htdocs/OLO/build/common.scss */
+    /* line 366, D:/xampp/htdocs/OLO/build/common.scss */
     .footer .wrap-btn-footer.btn-above a {
       color: #14a0aa; }
-  /* line 317, D:/xampp/htdocs/OLO/build/common.scss */
+  /* line 371, D:/xampp/htdocs/OLO/build/common.scss */
   .footer .wrap-btn-footer.btn-behind a {
     color: white; }
-  /* line 322, D:/xampp/htdocs/OLO/build/common.scss */
+  /* line 376, D:/xampp/htdocs/OLO/build/common.scss */
   .footer .line {
     height: 2px;
     max-width: 280px;
     background: #14a0aa;
     margin: 0 auto;
     margin: 40px auto; }
-  /* line 331, D:/xampp/htdocs/OLO/build/common.scss */
+  /* line 385, D:/xampp/htdocs/OLO/build/common.scss */
   .footer .text-footer .logo-footer img {
     margin: 0 auto; }
-  /* line 335, D:/xampp/htdocs/OLO/build/common.scss */
+  /* line 389, D:/xampp/htdocs/OLO/build/common.scss */
   .footer .text-footer p.text {
     color: #14a0aa;
     font-family: "HiraKakuPro-W3-AlphaNum";
     font-size: 1.2rem;
     margin-top: 20px; }
 
-/* line 343, D:/xampp/htdocs/OLO/build/common.scss */
+/* line 397, D:/xampp/htdocs/OLO/build/common.scss */
 .copy-right {
   padding: 30px 0; }
-  /* line 345, D:/xampp/htdocs/OLO/build/common.scss */
+  /* line 399, D:/xampp/htdocs/OLO/build/common.scss */
   .copy-right p {
     font-family: "HiraKakuPro-W3-AlphaNum";
     color: #505a5e;

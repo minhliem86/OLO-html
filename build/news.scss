@@ -83,7 +83,10 @@
 	 	}
 	}
 	.wrap-content-news{
-		padding:20px 0 0 50px;;
+		padding:20px 0 0 50px;
+		@include media(767px){
+			padding:20px 0 0 0;;
+		}
 		h3.title-each-news{
 			font-size:1.6rem;
 			@include fontW6;
