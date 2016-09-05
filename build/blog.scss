@@ -111,9 +111,18 @@ $cl-whiteblue:#ddeff1;
 	.banner{
 		background:url('../img/blog/bg-blog.jpg')no-repeat;
 		background-size:100%;
+		@include media(767px){
+			background-size:cover;
+		}
+			
 		.wrap-banner{
 			height:500px;
 			text-align: center;
+			@include media(767px){
+				height:auto;
+				padding:20px 0;
+			}
+				
 			img{
 				margin:0 auto 45px;
 			}
@@ -132,6 +141,13 @@ $cl-whiteblue:#ddeff1;
 	 				li{
 	 					float:left;
 	 					margin-right:10px;
+	 					@include media(767px){
+	 						float:none;
+	 						display:inline-block;
+	 						margin-right: 0;
+	 						margin-bottom:10px;
+	 					}
+	 						
 	 					a{
 							display:block;
 							padding:6px 0;
@@ -197,7 +213,214 @@ $cl-whiteblue:#ddeff1;
 				}
 			}
 		}
+		.sidebar{
+			.ads img{
+				margin:0 auto 30px;
+			}
+		}
+		.box-sidebar{
+			margin-bottom:30px;
+			h2.title-sidebar{
+				font-size:1.2rem;
+				@include fontW6;
+				color:$cl-xamxanh;
+				text-align:center;
+				margin-bottom:20px;
+				padding-bottom:10px;
+				border-bottom:1px solid $cl-xamxanh;
+			}
+			.each-content-box{
+				display:table;
+				padding:0 10px 10px;
+				border-bottom:1px dashed $cl-xamxanh;
+				margin-bottom:10px;
+				.is-table-cell{
+					display:table-cell;
+					vertical-align: middle;
+					span.number{
+						padding:4px 8px;
+						background:#1496a0;
+						color:white;
+						display:inline-block;
+						vertical-align: middle;
+					}
+					span.content{
+						display:inline-block;
+						font-size:1.2rem;
+						@include fontW3;
+						color:$cl-xamxanh;
+						width:78%;
+						vertical-align: middle;
+						padding-left:20px;
+					}
+				}
+			}
+			&.present-hunters{
+				background:white;
+				padding:20px;
+				.content-box{
+					text-align: center;
+					h3.title-hunter{
+						padding:20px 0;
+						font-size:2.5rem;
+						@include fontLangdon;
+						color:$cl-xanhngoc;
+						text-transform: uppercase;
+					}
+					p.sub-hunter{
+						font-size:1.2rem;
+						@include fontW3;
+						color:$cl-xamxanh;
+					}
+					a.link-hunter{
+						font-size:1.2rem;
+						@include fontW3;
+						color:$cl-xanhngoc;
+					}
+
+				}
+			}
+		}
+		.box-img{
+			margin-bottom:30px;
+			img{
+				margin:0 auto;
+			}
+		}
+		&.detail-blog{
+			.wrap-main-content{
+				.writer-area{
+					margin-bottom:20px;
+					p.writer-top{
+						display: inline-block;
+						font-size:1.2rem;
+						@include fontW3;
+						color:$cl-xamxanh;
+						span{
+							font-size:1.4rem;
+							@include fontW6;
+							color:$cl-xanhngoc;
+						}
+					}
+					.social-small{
+						width:50%;
+						display: inline-block;
+						float:right;
+						img{
+							float:right;
+						}
+					}
+				}
+			}
+			.relate-blog{
+				margin-top:30px;
+				background:white;
+				padding:10px;
+				h2.title-relate{
+					padding:10px 20px;
+					margin-bottom:20px;
+					padding-bottom:20px;
+					border-bottom:1px solid $cl-xamxanh;
+					font-size:1.6rem;
+					@include fontW6;
+				}
+				.each-relate{
+					margin-bottom:20px;
+					img{
+						margin:0 auto 10px;
+					}
+					a.title-blog-relate{
+						font-size:1.2rem;
+						@include fontW3;
+						color:$cl-xanhngoc;
+					}
+				}
+			}
+		}
 	}
 }
 
 
+.pre-footer{
+	background:white;
+	padding:35px 0;
+	.wrap-nav-footer{
+		text-align:center;
+		.nav-footer{
+			display:inline-block;
+			text-align: center;
+			li{
+				display:inline-block;
+				padding:0 30px;
+				@include media(767px){
+					display: block;
+					padding:15px 0;
+				}
+					
+				a{
+					display: block;
+					padding:0 15px;
+					color:$cl-xanhngoc;
+					&:hover, &:focus{
+						text-decoration: underline !important;
+					}
+				}
+			}
+		}
+	}
+}
+.pre-top{
+	@extend .pre-footer;
+	.wrap-nav-top{
+		@extend .wrap-nav-footer;
+		.nav-top{
+			@extend .nav-footer;
+		}
+	}
+}
+.breadcrum{
+	padding:10px 0;
+	.breadcrum-me{
+		list-style-type:none;
+		li{
+			display:inline-block;
+			padding:0 15px;
+			position:relative;
+			a{
+				display:block;
+				@include fontW3;
+				font-size:1.4rem;
+				color:$cl-xamxanh;
+			}
+			&:after{
+				content:'/';
+				display:block;
+				position:absolute;
+				right:0;
+				top:0;
+			}
+			&:last-child:after{
+				content:'';
+			}
+			&.active{
+				a{
+					color:$cl-xanhngoc;
+					text-decoration:underline !important;;
+				}
+			}
+		}
+	}
+}
+
+
+.footer{
+	padding:30px 0;
+	text-align:center;
+	background:$cl-xanhngoc;
+	color:White;
+	p{
+		font-size:2.2rem;
+		@include fontW6;
+		font-style:italic;
+	}
+}
